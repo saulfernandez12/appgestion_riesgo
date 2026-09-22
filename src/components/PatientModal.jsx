@@ -255,7 +255,7 @@ function PatientModal({ onContinue }) {
       >
         <div className="flex flex-col items-center gap-2 text-center">
           <img src={logo} alt="Medicall24" className="h-16 w-auto" />
-          <h1 className="text-2xl font-bold text-gray-900">Herramienta de cribado de desnutrición (MST)</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Herramienta de tamizaje de desnutrición (MST)</h1>
         </div>
 
         <div className="border-t border-gray-100 pt-4">

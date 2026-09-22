@@ -208,9 +208,12 @@ function DashboardContent({ onLogout }) {
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 py-8 print:max-w-none print:gap-4 print:p-0">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between print:hidden">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">Dashboard MST</h1>
-          <p className="text-sm text-gray-500">Análisis de tests aplicados, por puntos, sexo y hospitalización.</p>
+        <div className="flex items-center gap-3">
+          <img src={logo} alt="Medicall24" className="h-12 w-auto shrink-0" />
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900">Dashboard MST</h1>
+            <p className="text-sm text-gray-500">Análisis de tests aplicados, por puntos, sexo y hospitalización.</p>
+          </div>
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -265,7 +268,10 @@ function DashboardContent({ onLogout }) {
         </div>
       </div>
 
-      <h1 className="hidden text-xl font-bold text-gray-900 print:block">Dashboard MST — Gráficas</h1>
+      <div className="hidden items-center gap-3 print:flex">
+        <img src={logo} alt="Medicall24" className="h-10 w-auto" />
+        <h1 className="text-xl font-bold text-gray-900">Dashboard MST — Gráficas</h1>
+      </div>
 
       {cargando && (
         <div className="rounded-lg border border-gray-200 bg-white p-6 text-center text-sm text-gray-500">

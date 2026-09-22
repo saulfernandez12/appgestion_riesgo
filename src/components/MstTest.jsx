@@ -14,6 +14,7 @@ import CheckOption from './CheckOption'
 import SuccessModal from './SuccessModal'
 import ErrorModal from './ErrorModal'
 import ChartsModal from './ChartsModal'
+import logo from './Img/panel_logo_login.svg'
 
 function todayIso() {
   return new Date().toISOString().slice(0, 10)
@@ -157,6 +158,7 @@ function MstTest({ patient }) {
       </div>
 
       <div className="flex flex-col items-center gap-2 text-center">
+        <img src={logo} alt="Medicall24" className="h-16 w-auto" />
         <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">Herramienta de tamizaje de desnutrición (MST)</h1>
         <p className="max-w-xl text-sm text-gray-600">
           El MST (Malnutrition Screening Tool) es una herramienta rápida de tamizaje nutricional que identifica,
